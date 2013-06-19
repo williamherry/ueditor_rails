@@ -18377,7 +18377,8 @@
 
           //display bottom-bar label based on config
           if (editor.options.elementPathEnabled) {
-            editor.ui.getDom('elementpath').innerHTML = '<div class="edui-editor-breadcrumb">' + editor.getLang("elementPathTip") + ':</div>';
+            //editor.ui.getDom('elementpath').innerHTML = '<div class="edui-editor-breadcrumb">' + editor.getLang("elementPathTip") + ':</div>';
+            editor.ui.getDom('elementpath').innerHTML = '<div style="height: 23px;" class="edui-editor-breadcrumb"></div>';
           }
           if (editor.options.wordCount) {
             function countFn() {
@@ -18799,6 +18800,7 @@
         }
       },
       _updateElementPath: function () {
+        return true
         var bottom = this.getDom('elementpath'), list;
         if (this.elementPathEnabled && (list = this.editor.queryCommandValue('elementpath'))) {
 
