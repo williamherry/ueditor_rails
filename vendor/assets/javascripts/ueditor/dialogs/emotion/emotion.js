@@ -40,7 +40,7 @@ function initEvtHandler( conId ) {
             j++;
         }
     }
-    switchTab( 0 );
+    switchTab( 5 );
     $G( "tabIconReview" ).style.display = 'none';
 }
 
