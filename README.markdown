@@ -3,11 +3,14 @@ UEditor Rails
 
 UEditor integration with Rails.
 
+## Notes
+not work on Rails 3.2.8, 3.2.13 is fine.
+
 ## Demo
 Go to ```test/dummy``` and ```rails s```, remember ```bundle``` first.
 
 ## Installation
-Add the gem to your Gemfie ```gem 'ueditor_rails', :git => 'https://github.com/jasl/ueditor_rails.git'``` or ```gem 'ueditor_rails'```.
+Add the gem to your Gemfie ```gem 'ueditor_rails', :git => 'https://github.com/williamherry/ueditor_rails.git'```.
 
 ```bundle``` and run ```rails g ueditor_rails:install```.
 
@@ -15,7 +18,7 @@ Add the gem to your Gemfie ```gem 'ueditor_rails', :git => 'https://github.com/j
 See ```app/assets/javascripts/ueditor_config.js.erb``` for detail.
 
 ## Using
-```require ./ueditor_config```(which generated at installation) to your application.js first.
+```#= require ueditor_config```(which generated at installation) to your `application.js.coffee` first.
 
 **samples**
 
